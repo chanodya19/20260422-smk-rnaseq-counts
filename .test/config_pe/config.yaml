@@ -104,6 +104,8 @@ junctions:
 deduplicate:
   ## Boolean to specify whether alignments should be deduplicated by UMI and position
   activate: True
+  ## Keep BAM files or automatically delete them
+  keep_bam: True
   ## Extra params passed to UMI-tools
   ## Exclude `--paired` for single-end
   extra: "--paired --umi-separator=:"
