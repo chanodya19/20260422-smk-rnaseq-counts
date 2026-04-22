@@ -12,7 +12,7 @@ samples: "config/samples.tsv"
 units: "config/units.tsv"
 
 ## Path to raw data specified in units.tsv
-data_dir: "../raw_data"
+data_dir: "/mnt/c/Users/chano/mount/box/sequences/Illumina/RNASeq/human/BMK250331_CP604_S10_April26_Chano"
 
 ref:
   ## Ensembl species name
@@ -112,15 +112,15 @@ deduplicate:
 
 ## RSeQC configuration
 read_distribution:
-  activate: False
+  activate: True
 inner_distance:
   activate: False
 
 ## rRNA detection
 rrna:
-  activate: False
+  activate: True
 
 ## Genome coverage
 coverage:
-  activate: False
-  keep_bedGraphs: False
+  activate: True
+  keep_bedGraphs: True
